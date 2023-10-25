@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #fafafa;
+}
+
+header{
+    background-color: #0066FF;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.menu a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.bem-vindo{  
+    background-color: #0711FF;
+    width: auto;
+    height: 351px;
+}
+
+.carrousel img{
+    height: 400px;
+}
+
+.container-quadro{
+    width: auto;
+    gap: 150px;
+    display: grid;
+    padding: 20px 0;
+    grid-template-columns: 200px 200px 200px;
+
+    background-color: white;
+    justify-content: center;
+}
+   
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+  }
+
+  .card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    
+    width: 400px;
+    height: 300px;
+    transition: all 0.3s ease-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+  .card p {
+    color: #a3a5ae;
+    font-size: 16px;
+  }
+   
+  .image {
+    float: right;
+    width: 64px;
+    height: 64px;
+  }
+  .blue {
+    border-left: 3px solid #4895ff;
+  }
+   
+  .green {
+    border-left: 3px solid #3bb54a;
+  }
+   
+  .red {
+    border-left: 3px solid #b3404a;
+  }
+
+.container-footer{
+    width: auto;
+    height: 24em;
+    background-color: #0066FF;
+}
+
+.menu-footer a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 10px;
+  display: grid;
+  
+}
+
+.container-footer{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.redes-sociais{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: bold;
+  
+}
+
+.container-imagens{
+  display: flex;
+  
+}
+
+.img{
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  padding: 2px;
+}
+
+.midias-sociais p{
+  margin: 0;
+}
+
+.email{
+  margin-top: 20px;
+}
+
+.email p{
+  text-decoration: none;
+  color: white;
+  padding: 2px;
+  margin: 0px;
+}
+
+.selo{
+  margin-top: 20px;
+  width: 10px;
+  height: 10px;
+}
+
+.rodape{
+  background: rgb(83, 83, 211);
+  width: auto;
+  height: 40px;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.rodape p{
+  margin: 0;
+}
+
+/* ===========tela login=================== */
+
+.form{
+  width: 300px; 
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+  height: 200px;
+  background: #0066FF ;
+  border-radius: 7px;
+  padding: 30px;
+  gap: 5px;
+  margin-top: 10em;
+  box-shadow: 5px 5px 5px 1px black;
+}
+
+#nome, #senha, #cadastrar{
+  margin: 0 auto;  
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 630px){
+    .container-quadro{
+        grid-template-columns: 200px 200px;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .container-quadro{
+        grid-template-columns: 100%;    
+        margin: 20px;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:550px){
+    
+}
+
+
