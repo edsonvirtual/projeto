@@ -35,7 +35,7 @@ header{
 
 .container-quadro{
     width: auto;
-    gap: 150px;
+    gap: 40px;
     display: grid;
     padding: 20px 0;
     grid-template-columns: 200px 200px 200px;
@@ -89,13 +89,12 @@ header{
   }
 
 .container-footer{
-    width: auto;
-    height: 24em;
+    height: auto;
     background-color: #0066FF;
     padding: 20px;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 10px;
   
 }
 
@@ -242,14 +241,21 @@ header{
 
 
 
-@media screen and (max-width: 630px){
-    .container-quadro{
+@media screen and (max-width: 770px){
+  .container-quadro{
         grid-template-columns: 200px 200px;
         margin: 20px;
+        gap: 50px;
     }
 }
 
-@media screen and (max-width: 430px){
+@media only screen and (max-width: 550px){
+  .menu{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 510px){
     .container-quadro{
         grid-template-columns: 100%;    
         margin: 20px;
@@ -259,8 +265,44 @@ header{
     }
 }
 
-@media screen and (max-width:550px){
+@media screen and (max-width: 768px) {
+  #container-footer{
+    width: auto;
+    flex-direction: column;
+  }
+
+  .carrousel{
+    width: auto;
+  }
+
+  .container-footer{
     
+  }
+  .maps{
+    width: 30px
+  }
+  .rodape{
+    font-size: 10px;
+  }
 }
+
+@media screen and (min-width: 768px) {
+  #container-footer{
+    width: auto;
+    flex-direction: column;
+  }
+
+  .carrousel{
+    width: auto;
+  }
+
+  .container-footer{
+  
+  }
+  .maps{
+    width: auto
+  }
+}
+
 
 
