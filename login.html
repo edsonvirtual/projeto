@@ -8,18 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="form">
-        
-        <input type="text" name="" id="nome" placeholder="Nome...">
-        <br>
-        
-        <input type="password" name="" id="senha" placeholder="Senha...">
-        <br>
-        <input type="button" value="cadastrar" id="cadastrar" onclick="cadastrar()">
-    </div>
+    <header>
+        <div id="menu-header"></div>
+          <nav class="menu">
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="empresa.html" class="menu-item">Empresa</a>
+            <a href="quemSomos.html" class="menu-item">Quem Somos</a>
+            <a href="login.html" class="menu-item">Login</a>
+            <a href="cadastrase.html" class="menu-item">Cadastre-se</a>
+          </nav>
+        </div>
+      </header>
+           
+            <div class="form">
+                <input type="text" name="" id="nome" placeholder="Nome...">
+                <p class="aviso-nome"></p>
+                <input type="password" name="" id="senha" placeholder="Senha...">
+                <p class="aviso-senha"></p>
+                <input type="button" value="cadastrar" id="cadastrar" onclick="cadastrar()">
+            </div>
+            <script src="script.js"></script>
 
-    <script src="script.js"></script>
+      
+        <!-- 
+        // let pessoas=[{nome:'marlon', idade:34}, {nome:'maria', idade:23},{nome:'marcelo', idade:20}]
 
-    
+            //let indice = pessoas.findIndex(function(e){
+            //  return e.nome == 'marlon' && e.idade ==34
+            //})
+            //console.log(indice)     -->
 </body>
 </html>

@@ -92,6 +92,11 @@ header{
     width: auto;
     height: 24em;
     background-color: #0066FF;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  
 }
 
 .menu-footer a {
@@ -100,13 +105,6 @@ header{
   padding: 10px;
   display: grid;
   
-}
-
-.container-footer{
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 100px;
 }
 
 .redes-sociais{
@@ -188,6 +186,61 @@ header{
   height: 30px;
   border-radius: 5px;
 }
+
+/* ==================================================== */
+
+.container-cadastrese{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==================================================== */
+.aviso-nome,.aviso-senha{
+  color: red;
+  text-align: center;
+  height: 18.5px;
+}
+
+#close, .item{
+  color: white;  
+}
+
+#close{
+  width: 100%;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.form-container{
+  border-radius: 10px;
+  margin: auto;
+  height: 300px;
+  width: 500px;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#cadastrar{
+  width: 230px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 30px;
+  border: none;
+  background: rgb(0,150,50);
+  color: white;
+  box-shadow: 2px 2px 4px black;
+}
+#cadastrar:hover{
+  background: rgb(0,80,0);
+  cursor: pointer;
+}
+
+
 
 @media screen and (max-width: 630px){
     .container-quadro{
